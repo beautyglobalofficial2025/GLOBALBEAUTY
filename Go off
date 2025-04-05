@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Global - Celebrating Beauty</title>
+    <style>
+        :root {
+            --ocean-blue: #1a73e8;
+            --soft-pink: #ff9ff3;
+            --light-blue: #a4d4ff;
+            --pale-pink: #ffdef2;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--ocean-blue), var(--soft-pink));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: var(--ocean-blue);
+            margin-top: 2rem;
+            border-bottom: 2px solid var(--soft-pink);
+            padding-bottom: 0.5rem;
+        }
+        
+        .intro {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .section {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section-highlight {
+            border-left: 4px solid var(--soft-pink);
+            padding-left: 1rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            background-color: var(--pale-pink);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--soft-pink), var(--ocean-blue));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-text {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Beauty Global</h1>
+            <p class="intro">Collecting beauty in makeup, landscapes, lifestyles, and humanitarian acts across our planet.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="section">
+            <h2>The Art of Transformation</h2>
+            <p>Exploring creative makeup looks that enhance natural beauty and artistic expression.</p>
+            <div class="section-highlight">
+                <p>"Makeup is not a mask that covers up your beauty; it's a weapon that helps you express who you are from the inside."</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Beautiful Living Space</h2>
+            <p>Beautiful living environments that promote peace and wellbeing.</p>
+            <ul>
+                <li>Minimalist designs that create calm</li>
+                <li>Natural materials that connect us to earth</li>
+                <li>Thoughtful spaces that inspire creativity</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Earth's Masterpieces</h2>
+            <p>Stunning natural landscapes that remind us of our planet's incredible beauty.</p>
+            <p>From the <span class="highlight">azure waters</span> of tropical islands to the <span class="highlight">majestic peaks</span> of snow-capped mountains, our world is filled with wonders.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Active Lifestyle</h2>
+            <ul>
+                <li><strong>Vibrant Living</strong>
+                    <ul>
+                        <li>Celebrating bodies in motion and the beauty of an active, energetic life.</li>
+                        <li>Finding joy in movement and physical expression.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Serene Beach</h2>
+            <ul>
+                <li><strong>Ocean's Embrace</strong>
+                    <ul>
+                        <li>The tranquil beauty of shorelines where land meets sea in perfect harmony.</li>
+                        <li>The therapeutic sound of waves meeting the shore.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Acts of Kindness</h2>
+            <ul>
+                <li><strong>Beautiful Souls</strong>
+                    <ul>
+                        <li>The most beautiful acts – when humans help each other with compassion.</li>
+                        <li>Small gestures that make big differences in people's lives.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p class="footer-text">Beauty Global: Celebrating beauty in all its forms across our world</p>
+            <p>© <span id="current-year"></span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Display current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
